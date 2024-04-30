@@ -9,15 +9,18 @@ const NewPost = () => {
     const[author, setAuthor] = useState()
     const[description, setDescription] = useState()
     const[year, setYear] = useState()
-    // const[page_number, setPage] = useState()
+    const[page_number, setPage] = useState()
 
     const insertBook = async(e)=>{
         e.preventDefault()
 
-        const post = { name, author, description, year }
         await bookFetch.post('/', {
-            body: post
-        })
+                name: name,
+                author: author,
+                description: description,
+                year: year,
+                page_number: page_number
+            })
 
         navigate('/')
     }
@@ -57,14 +60,14 @@ const NewPost = () => {
                     id='year'
                     onChange={(e) => setYear(e.target.value)}/>
             </div>
-            {/* <div className='form-control'>
+            <div className='form-control'>
                 <label htmlFor='page'>Número de páginas:</label>
                 <input type="number" 
                     name='page' 
                     placeholder='Número de páginas...' 
                     id='page'
                     onChange={(e) => setPage(e.target.value)}/>
-            </div> */}
+            </div>
             <input type="submit" value="Cadastrar livro" className='btn'/>
         </form>
     </div>

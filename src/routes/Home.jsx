@@ -36,7 +36,7 @@ const Home = () => {
                     <h2>{book.name}</h2>
                     <p>{book.description}</p>
                     <p>Autor: {book.author}</p>
-                    <Link to={`livro/${book._id}`} className='btn'>Ver mais</Link>
+                    <Link to={`livro/${book._id}`} className='btn' id={book._id}>Ver mais</Link>
                 </div>
             ))
         )}
