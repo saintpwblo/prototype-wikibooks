@@ -8,6 +8,7 @@ import Home from './routes/Home.jsx'
 import NewPost from './routes/NewPost.jsx'
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+import Search from './routes/Search.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/livro/:id',
         element: <Book/>
+      },
+      {
+        path: '/livros/:nome',
+        element: <Search />
       }
     ]
   }

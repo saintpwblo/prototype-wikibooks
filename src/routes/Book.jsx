@@ -27,11 +27,11 @@ const Book = () => {
   return (
     <div>
         {!book ? <p>Carregando...</p> : (
-            <div>
+            <div className='post'>
                 <h1>{book.name}</h1>
                 <p>Autor: {book.author}</p>
                 <p>{book.description}</p>
-                <p>Primeira edição: {book.year}</p>
+                <p>Data de publicação: {book.year}</p>
                 {book.page_number ? <p>Número de páginas: {book.page_number}</p> : ''}
             </div>
         )}
