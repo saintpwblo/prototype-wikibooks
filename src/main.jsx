@@ -6,6 +6,7 @@ import './index.css'
 import Book from './routes/Book.jsx'
 import Home from './routes/Home.jsx'
 import NewPost from './routes/NewPost.jsx'
+import Update from './routes/Update.jsx'
 
 import { createBrowserRouter, RouterProvider} from 'react-router-dom'
 import Search from './routes/Search.jsx'
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: '/new',
+        path: '/novo',
         element: <NewPost />
       },
       {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: '/livros/:nome',
         element: <Search />
+      },
+      {
+        path: '/atualizar/:id',
+        element: <Update />
       }
     ]
   }

@@ -22,11 +22,13 @@ const NewPost = () => {
                 page_number: page_number
             })
 
+        alert('Livro cadastrado com sucesso.')
+
         navigate('/')
     }
   return (
     <div className='new-post'>
-        <h2>Inserir novo post:</h2>
+        <h2>Inserir novo livro:</h2>
         <form onSubmit={(e)=> insertBook(e)}>
             <div className='form-control'>
                 <label htmlFor='name'>Título do livro:</label>

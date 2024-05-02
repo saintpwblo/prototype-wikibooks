@@ -7,12 +7,12 @@ const Navbar = () => {
   // const [bookName, setBookName] = useState()
   const navigate = useNavigate()
 
-  const searchBook = (e)=>{
-    e.preventDefault()
+  // const searchBook = (e)=>{
+  //   e.preventDefault()
     
-    navigate(`livros/${name}`)
-    document.getElementById('bookname').value = ''
-  }
+  //   navigate(`livros/${name}`)
+  //   document.getElementById('bookname').value = ''
+  // }
 
   return (
 
@@ -20,14 +20,14 @@ const Navbar = () => {
 
         <h2><Link to={`/`}>Livros</Link></h2>
 
-        <form onSubmit={searchBook} className='formNav'>
+        <form className='formNav'>
           <input type="text" placeholder='Pesquise um livro...' onChange={(e)=>setName(e.target.value)} className="inputtext" id='bookname'/ >
-          <input type="submit" value="Buscar" className="btnsubmit"/>
+         <Link to={`livros/${name}`}> <input type="submit" value="Buscar" className="btnsubmit"/></Link>
         </form>
 
         <ul>
             <li><Link to={`/`}>Home</Link></li>
-            <li className='newbtn'><Link to={`/new`}>Novo livro</Link></li>
+            <li className='newbtn'><Link to={`/novo`}>Novo livro</Link></li>
         </ul>
 
     </nav>
