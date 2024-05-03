@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import './NewPost.css'
 import bookFetch from '../axios/config'
 const NewPost = () => {
+    
+
     const navigate = useNavigate()
 
     const[name, setName] = useState()
@@ -26,11 +28,14 @@ const NewPost = () => {
 
         navigate('/')
     }
+
+    
   return (
     <div className='new-post'>
         <h2>Inserir novo livro:</h2>
         <form onSubmit={(e)=> insertBook(e)}>
             <div className='form-control'>
+                
                 <label htmlFor='name'>Título do livro:</label>
                 <input type="text" 
                     name='name' 

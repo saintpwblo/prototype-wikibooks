@@ -5,6 +5,8 @@ import { useParams, useNavigate, Link } from 'react-router-dom'
 
 const Book = () => {
 
+    
+
     const [book, setBook] = useState()
     const {id} = useParams()
     const navigate = useNavigate()
@@ -49,7 +51,7 @@ const Book = () => {
             </div>
             <div className='buttons'>
                 <button onClick={deleteBook} className='btn'>Deletar livro</button>
-                <Link to={`../../atualizar/${id}`}><button className='btn'>Atualizar livro</button></Link>
+                <Link to={`/livro/${id}/atualizar`}><button className='btn'>Atualizar livro</button></Link>
             </div>
             </>
         )}

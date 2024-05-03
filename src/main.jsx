@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <Search />
       },
       {
-        path: '/atualizar/:id',
+        path: '/livro/:id/atualizar',
         element: <Update />
       }
     ]
