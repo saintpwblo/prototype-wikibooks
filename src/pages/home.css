@@ -1,0 +1,60 @@
+main{
+    margin: auto 1vh;
+}
+.introducao{
+    width: 360px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.colection-books{
+    margin-top: 60px;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.create-book{
+    
+    #icon-create{
+        background-color: #634643;
+        color: #3D2528;
+        border-radius: 10px;
+        width: 205px;
+        height: 285px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+.contaneir-book{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 30px;
+
+    .contaneir-img{
+        background-color: #634643;
+        color: #3D2528;
+        border-radius: 10px;
+        width: 205px;
+        height: 285px;
+        outline: none;
+        border: none;
+    }
+
+    h2{
+        width: 205px;
+    }
+    p{
+        width: 205px;
+        color: #A7A7A7;
+    }
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

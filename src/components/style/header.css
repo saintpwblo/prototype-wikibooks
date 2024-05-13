@@ -1,0 +1,46 @@
+header{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    form{
+        display: flex;
+        flex-direction: row;
+    }
+
+    img{
+        height: 30px;
+    }
+
+    .input-contaneir{
+        display: flex;
+        max-width: 500px;
+        max-height: 50px;
+
+        input{
+            color: #3d3d3d;
+            height: 28px;
+            width: 200px;
+            padding: 0px 5px 0px 5px;
+            border-radius: 6px 0px 0px 6px;
+        }
+        button{
+            background-color: #B26E63;
+            padding-inline: 8px;
+            border-radius: 0px 6px 6px 0px;
+            transition: transform 0.3s ease-out; 
+            cursor: pointer
+        }
+        button:hover{
+            background-color: #634643;
+        }
+    }
+
+    button{
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+        border: none;
+    }
+}

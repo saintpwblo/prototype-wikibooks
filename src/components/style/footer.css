@@ -1,0 +1,54 @@
+footer{
+    background-color: #634643;
+    /* padding: 45px 65px; */
+    padding: 6vh 4vw;
+    border-radius: 40px 40px 0px 0px;
+}
+.about-contaneir{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+
+    width: 600px;
+
+    img{
+        height: 3vw;
+        margin-bottom: 40px;
+    }
+
+    p{
+        margin-bottom: 5px;
+    }
+
+    span{
+        color: #EDAF6C;
+    }
+
+    .paragraphs{
+        width: 18vw;
+        margin-left: 10px;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .about-contaneir{
+        display: flex;
+        align-items: baseline;
+        align-content: flex-start;
+        flex-direction: column;
+
+        img{
+            height: 5vw;
+            margin-bottom: 10px;
+        }
+    
+        p{
+            width: 25vw;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+    }
+}

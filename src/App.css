@@ -1,0 +1,36 @@
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  #root {
+    .create-book{
+      h2, p {
+        width: 180px;
+      }
+  
+      #icon-create{
+          width: 180px;
+          height: 240px;
+      }
+    }
+    .contaneir-book{
+      margin: 10px 10px;
+  
+      .contaneir-img{
+          width: 180px;
+          height: 240px;
+      }
+  
+      h2, p {
+          width: 180px;
+      }
+
+    }
+
+    ul{
+      justify-content:space-around;
+    }
+  }
+}
